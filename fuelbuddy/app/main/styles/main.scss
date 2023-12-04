@@ -1,0 +1,127 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+*/
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #4a87ee !default;
+$calm:                            #43cee6 !default;
+$balanced:                        #66cc33 !default;
+$energized:                       #f0b840 !default;
+$assertive:                       #ef4e3a !default;
+$royal:                           #8a6de9 !default;
+$dark:                            #444 !default;
+
+// The path for our ionicons font files, relative to the built & temporary main.css
+$ionicons-font-path: "../assets/fonts" !default;
+
+// Include all of Ionic
+@import "../../bower_components/ionic/scss/ionic";
+
+
+// Spinner Styles
+.backdrop{
+  background-color: rgba(#fff, 0.6);
+}
+
+.loading-container{
+  background-color: rgba(#fff, 0.2);
+  & .loading{
+    background-color: transparent;
+  }
+}
+
+.spinner svg {
+  width: 40px;
+  height: 40px;
+  stroke: #4a87ee;
+  fill: #4a87ee;
+}
+
+
+// Login Screen Styles
+.login-screen-logo{
+  width: 100%;
+  height: 20vh;
+  & h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+}
+
+.login-error{
+  display: block;
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+i.login-input-ok{
+  color: green;
+  font-size: 1.2em;
+}
+
+// Sign Up Screen Styles
+.signup-screen-header{
+  & h2{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+}
+
+// Sidebar Menu Styles
+.sidebar-menu-top-panel{
+  display: block;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.sidebar-menu-footer{
+  height: 10vh;
+  & a:before{
+    margin-right: 20px;
+    vertical-align: top;
+  }
+}
+
+span.input-label{
+  font-weight: bold;
+}
+
+span.input-label + .item-radio{
+  margin-top: 10px;
+}
+
+.product-order-list{
+  margin-bottom: 0;
+}
+
+// Dashboard Styles
+span.lead{
+  font-size: 2.5em;
+}
+.purchase-history{
+  & i.icon{
+    font-size: 0.95em;
+  }
+  & i.ion-android-done{
+    color: green;
+  }
+  & i.ion-android-close{
+    color: red;
+  }
+}
+
+// Product Order Form
+.product-order-form{
+  & .textarea{
+    // min-height: 150px;
+  }
+}

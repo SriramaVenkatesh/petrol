@@ -1,0 +1,58 @@
+<ion-side-menus enable-menu-with-back-views="false">
+
+  <!-- CONTENT -->
+  <ion-side-menu-content>
+
+    <!-- header bar -->
+    <!-- the nav bar will be updated as we navigate between views -->
+    <ion-nav-bar class="bar-light">
+      <!-- back button, shown if applicable -->
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+      <!-- nav button, shown if applicable -->
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <!-- ROUTING INJECTED HERE: pageContent -->
+    <ion-nav-view name="pageContent"></ion-nav-view>
+
+  </ion-side-menu-content>
+
+  <!-- SIDEMENU -->
+  <ion-side-menu side="left">
+    <div class="row row-top">
+      <div class="col padding">
+        <div class="sidebar-menu-top-panel">
+          <h1>Fuelbuddy</h1>
+        </div>
+      </div>
+    </div>
+    <div class="list">
+      <a class="item item-icon-left menu-close" ui-sref="main.dashboard">
+        <i class="icon ion-android-home"></i> Dashboard
+      </a>
+      <a class="item item-icon-left menu-close" ui-sref="main.diesel">
+        <i class="icon ion-android-add"></i> Buy Diesel
+      </a>
+      <a class="item item-icon-left menu-close" ui-sref="main.gas">
+        <i class="icon ion-android-add"></i> Buy Gas
+      </a>
+      <a class="item item-icon-left menu-close" ui-sref="main.debug">
+        <i class="icon ion-android-add"></i> Debug
+      </a>
+      <a class="item item-icon-left menu-close" ui-sref="main.settings">
+        <i class="icon ion-gear-b"></i> Settings
+      </a>
+    </div>
+
+    <div class="bar bar-footer bar-light padding sidebar-menu-footer">
+      <!-- <a class="button icon-left ion-android-unlock button-clear button-dark">Signed In as Whoever</a> -->
+      <a class="button icon-left ion-android-lock button-clear button-dark" ng-click="menu.signOut()">Sign Out</a>
+    </div>
+
+  </ion-side-menu>
+
+</ion-side-menus>
